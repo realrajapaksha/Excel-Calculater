@@ -1,0 +1,154 @@
+Dim cellNumber As String
+
+Sub Start()
+
+cellNumber = "B27"
+Range("B27").Value = Null
+Range("F27").Value = Null
+Range("H27").Value = Null
+Range("L27").Value = Null
+Range("N27").Value = Null
+
+End Sub
+
+Sub One()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 1
+
+End Sub
+
+Sub Two()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 2
+
+End Sub
+
+Sub Three()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 3
+
+End Sub
+
+Sub Four()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 4
+
+End Sub
+
+Sub Five()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 5
+
+End Sub
+
+Sub Six()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 6
+
+End Sub
+
+Sub Seven()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 7
+
+End Sub
+
+Sub Eight()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 8
+
+End Sub
+
+Sub Nine()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 9
+
+End Sub
+
+Sub Ziro()
+
+Range(cellNumber).Value = Range(cellNumber).Value & 0
+
+End Sub
+
+Sub Node()
+
+Range(cellNumber).Value = Range(cellNumber).Value & "."
+
+End Sub
+
+Sub Plus()
+
+cellNumber = "F27"
+Range(cellNumber).Value = "+"
+cellNumber = "H27"
+
+End Sub
+
+Sub Mines()
+
+cellNumber = "F27"
+Range(cellNumber).Value = "-"
+cellNumber = "H27"
+
+End Sub
+
+Sub Divide()
+
+cellNumber = "F27"
+Range(cellNumber).Value = "/"
+cellNumber = "H27"
+
+End Sub
+
+Sub Multiple()
+
+cellNumber = "F27"
+Range(cellNumber).Value = "*"
+cellNumber = "H27"
+
+End Sub
+
+Sub Calculation()
+
+Range("L27").Value = "="
+
+operation = Range("F27").Value
+number1 = Range("B27").Value
+number2 = Range("H27").Value
+
+totalSum = 0
+
+If operation = "+" Then
+    totalSum = number1 + number2
+    
+ElseIf operation = "-" Then
+    totalSum = number1 - number2
+    
+ElseIf operation = "/" Then
+    totalSum = number1 / number2
+    
+ElseIf operation = "*" Then
+    totalSum = number1 * number2
+    
+End If
+
+Range("N27").Value = totalSum
+
+End Sub
+
+Sub Clear()
+
+Range("B27").Value = Null
+Range("F27").Value = Null
+Range("H27").Value = Null
+Range("L27").Value = Null
+Range("N27").Value = Null
+
+cellNumber = "B27"
+
+End Sub
+
+Sub Off()
+
+End Sub
