@@ -4,7 +4,7 @@ Simple Calculater Guide.
 
 1. Open Calculater.xlsx
 
-2. Right Click any Button (like Calculater).
+2. Right Click any Button (like Calculate).
 
 3. Select Assign Macro..
 
